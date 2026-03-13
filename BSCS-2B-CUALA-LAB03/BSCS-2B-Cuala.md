@@ -77,11 +77,12 @@ Fill in the table after 100 cycles:
 ## PART 5 - Experiment: Class Size Impact
 Use parameter: Initial number of students
 Test:
-# | Students  |   Avg Attention   |   Avg Performance
-  |   10      |       0.88        |       0.55
-  |   25      |       1.0         |       0.69
-  |   60      |       0.0         |       0.95
-  |   100     |       0.5         |       0.95
+| **Students** | **Avg Attention** | **Avg Performance** |
+| ------------ | ----------------- | ------------------- |
+| 10           | 0.88              | 0.55                |
+| 25           | 1.0               | 0.69                |
+| 60           | 0.0               | 0.77                |
+| 100          | 0.5               | 0.95                |
 # Analysis Questions:
 1. Does increasing class size affect average attention? 
     - Yes, class size affect average attention, but not always in a simple way. With a small class of 10 or 25 students, attention is high, but when the class grows to 60 students, attention drops a lot. At 100 students, attention goes up a little again. This shows that bigger classes can make it harder for everyone to stay focused.
@@ -130,4 +131,5 @@ Add:
 # Here my Explanation
 
     - For this part, we added a fatigue rule. If a students attention stays really low below 0.3 for 10 cycles, their performance starts to drop. This shows that if someone stays unfocused for a long time, it can affect how well they learn. The model keeps track of how long attention is low, and once it reaches 10 cycles, performance decreases a little. If attention goes back up, the count resets. This makes the simulation feel more realistic because it shows how losing focus for too long can hurt learning, not just temporary distraction
+
 
