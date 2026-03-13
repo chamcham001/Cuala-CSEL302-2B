@@ -30,12 +30,13 @@ Step 3 Open the generated file: classroom_data.csv
 
 ## PART 3 - Data Observation Table
 Fill in the table after 100 cycles:
- |       **Metric**                 |       **Value**                                 |
- | -----------------------------------------------------------------------------------|
- | Average Attention            |       0.80                                          |
- | Average Performance          |       1.0                                           |
- | High Attention Count         |       25                                            |
- | Number of Breaks Occurred    |2 breaks (0-29 1st break and 60-89 2nd break period) |
+| **Metric**                | **Value**                                                              |
+| ------------------------- | ---------------------------------------------------------------------- |
+| Average Attention         | 0.80                                                                   |
+| Average Performance       | 1.0                                                                    |
+| High Attention Count      | 25                                                                     |
+| Number of Breaks Occurred | 2 breaks (Cycle 0-29 break period 1<br><br>Cycle 60-89 break period 2) |
+
 ![alt text](<Screenshot 2026-03-12 204356.png>)
      
 ## PART 4 - Guided Code Analysis
@@ -129,3 +130,4 @@ Add:
 # Here my Explanation
 
     - For this part, we added a fatigue rule. If a students attention stays really low below 0.3 for 10 cycles, their performance starts to drop. This shows that if someone stays unfocused for a long time, it can affect how well they learn. The model keeps track of how long attention is low, and once it reaches 10 cycles, performance decreases a little. If attention goes back up, the count resets. This makes the simulation feel more realistic because it shows how losing focus for too long can hurt learning, not just temporary distraction
+
